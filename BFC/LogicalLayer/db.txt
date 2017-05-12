@@ -1,0 +1,13 @@
+create database BFC;
+use BFC;
+create table bfc_users(username varchar(50)primary key,password varchar(50),contact_no varchar(12),email varchar(50),address varchar(100));
+
+create table fileinfo(username varchar(100),
+filename varchar(50),
+fileid varchar(50),
+sha_value varchar(150),
+refrence_id varchar(50),
+start_chunk_id varchar(50),
+num_chunk int,
+file_size long,
+status int);
